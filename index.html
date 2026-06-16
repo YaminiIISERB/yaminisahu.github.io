@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>Yamini Sahu | PhD Scholar, BIT Mesra</title>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
   <style>
     :root {
       --bg: #f9f7f4;
@@ -22,11 +22,12 @@
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'DM Sans', sans-serif;
       background: var(--bg);
       color: var(--text);
-      font-size: 15px;
-      line-height: 1.75;
+      font-size: 15.5px;
+      line-height: 1.8;
+      letter-spacing: 0.01em;
     }
 
     /* ── NAV ── */
@@ -46,11 +47,12 @@
       padding: 14px 24px;
     }
     .nav-brand {
-      font-family: 'Merriweather', serif;
+      font-family: 'Playfair Display', serif;
       font-weight: 700;
-      font-size: 1rem;
+      font-size: 1.05rem;
       color: var(--text);
       text-decoration: none;
+      letter-spacing: 0.01em;
     }
     .nav-links { display: flex; gap: 28px; list-style: none; }
     .nav-links a {
@@ -79,11 +81,12 @@
       margin-bottom: 56px;
     }
     .about-grid h1 {
-      font-family: 'Merriweather', serif;
-      font-size: 2rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.1rem;
       font-weight: 700;
-      line-height: 1.25;
-      margin-bottom: 4px;
+      line-height: 1.2;
+      margin-bottom: 6px;
+      letter-spacing: -0.01em;
     }
     .about-grid .subtitle {
       font-size: 0.9rem;
@@ -93,8 +96,11 @@
     }
     .about-grid p {
       color: #333;
-      font-size: 0.94rem;
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.97rem;
+      font-weight: 300;
       margin-bottom: 12px;
+      line-height: 1.85;
     }
     .avatar-wrap {
       display: flex;
@@ -116,6 +122,7 @@
       color: var(--accent);
       overflow: hidden;
     }
+    img.avatar { display: block; }
     .avatar svg { width: 100px; height: 100px; }
 
     /* social icons */
@@ -144,14 +151,16 @@
     /* ── SECTION ── */
     section { margin-bottom: 52px; scroll-margin-top: 70px; }
     .section-title {
-      font-family: 'Merriweather', serif;
-      font-size: 1.25rem;
-      font-weight: 700;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      font-style: italic;
       color: var(--text);
       border-bottom: 2px solid var(--accent);
       padding-bottom: 8px;
       margin-bottom: 24px;
       display: inline-block;
+      letter-spacing: 0.01em;
     }
 
     /* ── NEWS TABLE ── */
@@ -280,10 +289,10 @@
   <div class="nav-inner">
     <a class="nav-brand" href="#">Yamini Sahu</a>
     <ul class="nav-links">
-      <li><a href="#about" class="active">About</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#awards">Awards</a></li>
+      <li><a href="#about" class="active">about</a></li>
+      <li><a href="#publications">publications</a></li>
+      <li><a href="#experience">experience</a></li>
+      <li><a href="#awards">awards</a></li>
     </ul>
   </div>
 </nav>
@@ -318,14 +327,30 @@
       </div>
 
       <div class="avatar-wrap">
-        <div class="avatar">
-          <!-- Placeholder avatar SVG -->
+        <!--
+          ════════════════════════════════════════
+          HOW TO ADD YOUR PHOTO:
+          1. Upload your photo to your GitHub repo
+             (e.g. save it as "assets/img/profile.jpg")
+          2. Replace the src below with your image path:
+             src="assets/img/profile.jpg"
+          OR use a direct image URL:
+             src="https://your-image-link.com/photo.jpg"
+          ════════════════════════════════════════
+        -->
+        <img
+          src="assets/img/profile.jpg"
+          alt="Yamini Sahu"
+          class="avatar"
+          onerror="this.style.display='none'; document.getElementById('avatar-placeholder').style.display='flex';"
+        />
+        <div id="avatar-placeholder" class="avatar" style="display:flex;">
           <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="50" cy="38" r="22" fill="#2a5f8f" opacity="0.6"/>
-            <ellipse cx="50" cy="90" rx="34" ry="22" fill="#2a5f8f" opacity="0.4"/>
+            <circle cx="50" cy="37" r="23" fill="#2a5f8f" opacity="0.55"/>
+            <ellipse cx="50" cy="92" rx="35" ry="22" fill="#2a5f8f" opacity="0.35"/>
           </svg>
         </div>
-        <p style="font-size:0.75rem;color:var(--muted);text-align:center;line-height:1.4;">
+        <p style="font-size:0.75rem;color:var(--muted);text-align:center;line-height:1.5;">
           yamini.sahu.rs<br>@gmail.com
         </p>
       </div>
@@ -342,7 +367,7 @@
       </tr>
       <tr>
         <td>July 2026</td>
-        <td>Completed tenure as Research Scientist II at <strong>AIIMS Raipur</strong> (Department of Trauma &amp; Emergency).</td>
+        <td>Completed tenure as Research Scientist II at <strong>AIIMS Raipur</strong> (Dept. of Trauma &amp; Emergency).</td>
       </tr>
       <tr>
         <td>2026</td>
@@ -381,7 +406,7 @@
 
   <!-- PUBLICATIONS -->
   <section id="publications">
-    <h2 class="section-title">Publications</h2>
+    <h2 class="section-title">publications</h2>
 
     <h3 style="font-size:0.88rem;font-weight:600;color:var(--muted);margin:0 0 12px;text-transform:uppercase;letter-spacing:0.06em;">Under Review</h3>
 
